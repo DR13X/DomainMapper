@@ -1,0 +1,13 @@
+www
+mail
+api
+dev
+staging
+cdn
+app
+admin
+portal
+ns1
+ns2
+ftp
+vpn

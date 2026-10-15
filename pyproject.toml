@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "domainmapper"
+version = "1.0.0"
+description = "Simple authorized domain-to-infrastructure OSINT reconnaissance tool."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+authors = [{ name = "DomainMapper Contributors" }]
+keywords = ["osint", "dns", "reconnaissance", "cybersecurity", "attack-surface"]
+dependencies = [
+    "dnspython>=2.4",
+]
+
+[project.scripts]
+domainmapper = "domainmapper.__main__:main"
+
+[project.urls]
+Homepage = "https://github.com/domainmapper/DomainMapper"
+
+[tool.setuptools.packages.find]
+include = ["domainmapper*"]
